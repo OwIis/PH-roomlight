@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>제목을 입력하세요</title>
+        <link rel="stylesheet" href="/wwa9/css/common.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            #typing-box{
+                width: 100%;
+                background-color: #ccc;
+                position: relative;
+            }
+            #typing-box > #bar{
+                width: 0.5px;
+                height: 20px;
+                background-color: red;
+                position: absolute;
+            }
+            #typing-box > p{
+                color: darkgreen;
+            }
+        </style>
+        <script>
+            window.onload = function(){
+                var typeBar = document.getElementById("bar");
+                var content = document.querySelector("#typing-box > p");
+
+                //바 깜박이기
+                var twinckle = function(){
+                    setInterval(function(){
+                        typeBar.style.backgroundColor = 'transparent';
+                    }, 500);
+                    setInterval(function(){
+                        typeBar.style.backgroundColor = 'red';
+                    }, 1000);
+                };
+
+                //글자 쪼개기
+                content.innerHTML = content.textContent.replace(/\S/g, "<span>$&</span>")
+
+                twinckle();
+
+
+                //space replace
+                var replace = document.getElementById("object")
+                var link = 'https://www.naver.com/'
+                replace.onclick = function() {
+                    //location.href=link;
+                    location.replace(link)
+                    console.log("hi")
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div id="typing-box">
+                <div id="bar"></div>
+                <p>안녕하세요 타이핑을 구현하기 위한 페이지입니다.</p>
+            </div>
+
+            <div id="object">page replace</div>
+        </div>
+    </body>
+</html>

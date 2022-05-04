@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="Content-Type" Content="text/html" charset="UTF-8"> -->
+        <title>Room Light</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- swiper css cdn -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> 
+        <link rel="stylesheet" href="css/index.css">
+        <!-- 구글폰트 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cute+Font&family=Jua&family=Do+Hyeon&display=swap" rel="stylesheet">
+        <!-- swiper js cdn -->
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+         <!-- jq cdn 3.6.0 -->
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+         <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            
+            
+            <!---------------------- 헤더입니다 ---------------------->
+            <header class="box1300">
+                <div class="menu clearfix">
+                    <nav>
+                        <ul class="clearfix">
+                            <li class="daynightbtn"><img src="images/daynightNightBtn.svg" tabindex="0" alt="light on/off effect"  onError=""></li>
+                            <li><p><a href="#">MAIN</a></p></li>
+                            <li><p><a href="#">PORTFOLIO</a></p></li>
+                            <li><p><a href="#">ABOUT ME</a></p></li>
+                            <li><p><a href="#">ETC</a></p></li>
+                        </ul> 
+                    </nav>
+                </div>
+                <div id="room">
+                    <div>
+                        <div id="lamp">
+                            <img src="images/lamp.svg" alt="lamp image"><span></span>
+                        </div>
+                        <p><a id="lighton" tabindex="0">CLICK</a></p>
+                    </div>
+                    <div class="lamplight"></div>
+                </div>
+            </header>
+            <!---------------------- fixed입니다 ---------------------->
+            <div id="uppertop"><a href="#"><img src="images/gotopBtn.png" alt="going top" onError="">go top</a></div>
+            
+
+            <!---------------------- 내용입니다 ---------------------->
+            <div id="contents" class="box1300">
+                <!---- 포트폴리오영역 ---->
+                <section class="conts2 clearfix" id="goportfolio">
+                    <article>
+                        <div class="conts-title"><h2>PORTFOLIO</h2></div>
+                        <div id="portfolio">
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide clearfix">
+                                        <div class="viewpage">
+                                            <img tabindex="0" id="w3cportfolio" src="images/w3cthumb.PNG" alt="w3school template:portfolio copy page"></div>
+                                        <div class="infopage">
+                                            <h3>W3C Portfolio</h3>
+                                            <p>사이트 카피</p>
+                                            <p>w3school에서 제공하는 템플릿을 토대로 구현 <a href="https://www.w3schools.com/w3css/tryw3css_templates_bw_portfolio.htm" target="_blank">[원본]</a></p>
+                                            <p>퍼블리싱: 100%<BR> 반응형: O<BR> 디자인: X</p>
+                                            <p>소요기간: 7일</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide clearfix">
+                                        <div class="viewpage">
+                                            <img tabindex="0" id="chilsal" src="images/chilthumb.PNG" alt="chilsung salon page copy"></div>
+                                        <div class="infopage">
+                                            <h3>칠성 향수</h3>
+                                            <p>사이트 카피</p>
+                                            <p>롯데 칠성기업의 향수페이지를 유사하게 구현 <a href="https://chilsung-salon.com/layout/subpage/archive_perfume.html" target="_blank">[원본]</a></p>
+                                            <p>퍼블리싱: 100%<br>반응형: O<br>디자인: X</p>
+                                            <p>소요기간: 7일</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide clearfix">
+                                        <div class="viewpage">
+                                            <img tabindex="0" id="wildsoul" src="images/wildthumb.PNG" alt="wild soul healhty products site copy"></div>
+                                        <div class="infopage">
+                                            <h3>Wild Soul</h3>
+                                            <p>사이트 카피</p>
+                                            <p>건강식품 wild soul페이지를 유사하게 구현 <a href="https://www.wildsouls.gr/en/" target="_blank">[원본]</a></p>
+                                            <p>퍼블리싱: 100%<br>반응형: O<br>디자인: X</p>
+                                            <p>소요기간: 7일</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide clearfix">
+                                        <div class="viewpage">
+                                            <img tabindex="0" id="roomlight" src="images/roomthumb.png" alt="mainpage for introducing portfolio"></div>
+                                        <div class="infopage">
+                                            <h3>Room Light</h3>
+                                            <p>웹페이지 구현</p>
+                                            <p>포트폴리오용 소개페이지 <a href="https://jsj0832.cafe24.com/homework/portfolio/mainpage/index.html" target="_blank">[원본]</a></p>
+                                            <p>퍼블리싱: 100%<br>반응형: O<br>디자인: O</p>
+                                            <p>소요날짜: 3주</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="swiper-slide clearfix">
+                                        <div class="viewpage">
+                                            <img src="" alt=""></div>
+                                        <div class="infopage">
+                                            <h3>유형</h3>
+                                            <p>이름</p>
+                                            <p>내용</p>
+                                            <p>퍼블리싱</p>
+                                            <p>소요날짜</p>
+                                        </div>
+                                    </div> -->
+                                    <!-- <div class="swiper-slide clearfix">
+                                        <div class="viewpage">
+                                        <img src="" alt=""></div>
+                                        <div class="infopage">
+                                            <h3>유형</h3>
+                                            <p>이름</p>
+                                            <p>내용</p>
+                                            <p>퍼블리싱</p>
+                                            <p>소요날짜</p>
+                                        </div>
+                                    </div> -->
+                                </div>
+
+                            </div>
+  
+                        </div>
+                    </article>
+                </section>
+                 <!---- about me ---->
+                <section class="conts1 clearfix" id="goaboutme">
+                    <div id="openAbMe" class="conts-title"><h2>About Me</h2></div>
+                    <article>
+                        <div class="myinfo">
+                            <div class="computing clearfix">
+                                <div id="htmlprog">
+                                    <div>
+                                        <p>HTML</p>
+                                        <span id="per1">70%</span>
+                                        <progress id="htmlgage" value="70" max="100">70%</progress>
+                                    </div>
+                                </div>
+                                <div id="cssprog">
+                                    <div class="progress">
+                                        <div class="pro-perct">
+                                            <p>CSS</p>
+                                            <span id="per2">70%</span>
+                                        </div>
+
+                                        <div id="progress-bar2"></div>
+                                    </div>
+                                </div>
+                                <div id="jsprog">
+                                    <div class="progress">
+                                        <div class="pro-perct">
+                                            <p>JavaScript</p>
+                                            <span id="per3">0%</span>
+                                        </div>
+                                        
+                                        <div id="progress-bar3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="design clearfix">
+                                <div id="photoprog">
+                                    <div class="progress">
+                                        <p>Photoshop</p>
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+                                <div id="illustprog">
+                                    <div class="progress">
+                                        <p>Illustrator</p>
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="seemore" tabindex="0"><a>더 알아보기</a></div>
+                </section>
+                
+                <!---- etc 영역 ---->
+                <section class="conts3 clearfix" id="goetc" tabindex="0">
+                    <div class="conts-title" ><h2>ANYTHING ELSE</h2></div>
+                    <article class="clearfix">
+                        <div class="contact">
+                            <h2 class="conts-title">CONTACT</h2>
+                            <div>
+                                <div id="name">김수민</div>
+                                <div id="address">kimtnals427@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="sns">
+                            <div id="tstory"><img src="images/tstorylogo.svg" alt="t-story logo"></div>
+                            <div id="psnpage"><div>준비중입니다</div></div>
+                        </div>
+                        
+                    </article>
+                </section>
+            </div>
+            <!---------------------- SIDEMENU입니다 ---------------------->
+            <nav id="sidebar">
+                <div>
+                    <ul class="clearfix">
+                        <li class="daynightbtn"><div><img src="images/daynightNightBtn.svg" tabindex="0" alt="light on/off effect"></div></li>
+                        <li><p><a href="#">MAIN</a></p></li>
+                        <li><p><a href="#goportfolio">PORTFOLIO</a></p></li>
+                        <li><p><a href="#goaboutme">ABOUT ME</a></p></li>
+                        <li><p><a href="#goetc">ETC</a></p></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,832 @@
+/* ------------------공통영역------------------ */
+html, body, .wrap{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cute Font', cursive;
+    font-size: 2vw;
+    color: rgb(53, 47, 58);
+}
+.clearfix::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+.box1300{
+    /* width: 1300px; */
+    width: 80%;
+    background-color: rgb(19, 17, 40);
+    margin: 0 auto;
+    transition: 1s;
+}
+.wrap{
+    width: 100%;
+    height: 100%; 
+    /* padding: 30px 150px; */
+    padding: 30px 7.894736842105263%;
+    list-style: none;
+    position: relative;
+    /* background: url("../images/wrapback_milkyway2.png") ; */
+    background-size: cover;
+    overflow: hidden;
+    background-color: rgb(19, 17, 40);
+    transition: 1s;
+}
+a{
+    text-decoration: none;
+}
+ /* a:link{ color: orange;} */
+.seemore{
+    cursor: pointer;
+}
+.seemore > a {
+    font-size: 1.5vw;
+    font-family: 'Do Hyeon';
+}
+.conts-title{
+    padding: 20px 0;
+    font-size: 40px;
+    text-align: center;
+}
+h2{
+    font-size: 6vw;
+    letter-spacing: 3px;
+}
+
+/* ------------------fixed------------------ */
+#sidebar{
+    position: fixed;
+    width: 12.63%;
+    top: 10%;
+    right: 15px;
+    background-color: rgb(211, 147, 35);
+    border-radius: 40px;
+    transition: 1s ;
+    transform: translateX(999px);
+    z-index: 5;
+}
+#sidebar > div{
+    /* width: 150px; */
+    width: 100%;
+    /* padding: 40px 20px; */
+    padding: 26% 13%;
+    
+}
+#sidebar > div li{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    padding: 9% 13%;
+    text-align: center;
+    border-top: 1px dotted rgba(255,255,255,.3);
+    border-bottom: 1px dotted rgba(255,255,255,.3);
+}
+#sidebar > div li:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#sidebar > div li.daynightbtn{
+    border-top: 0;
+    border-bottom: 0;
+}
+#sidebar > div li.daynightbtn img{
+    /* animation: dayroll 10s linear infinite; */
+}
+#sidebar > div li.daynightbtn:hover{
+    background-color: transparent;
+}
+#sidebar > div a{
+    color: rgb(53, 47, 58);
+}
+/* ----uppertop---- */
+#uppertop{
+    /* display: none;  */
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+#uppertop img{
+    display: block;
+    margin: 0 auto;
+}
+#uppertop a {
+    color: rgb(215, 209, 221);
+}
+
+
+
+/* ------------------헤더------------------ */
+header{
+    position: relative;
+    z-index: 1;
+}
+header > .menu{
+    width: 100%;
+}
+header > .menu > ul{
+    list-style: none;
+}
+header > .menu > nav{
+    float: right;
+    width: 70%;
+}
+header nav li{
+    list-style: none;
+    float: left;
+    cursor:pointer;
+    /* margin: 5px 10px; */
+    /* margin: 0 1%; */
+    /* margin-right: 10px; */
+    /* padding: 15px 30px; */
+    padding: 2.5% 4.5%;
+    border-radius: 30px 0 0 0 ;
+}
+header nav li:hover{
+    text-shadow: 0 0 10px white
+}
+.menu > nav li.daynightbtn{
+    width: 10%;
+    border: none;
+    box-shadow: none;
+    /* padding: 5px 0px; */
+    padding: 2.5% 2.5% 0;
+}
+
+.menu > nav li.daynightbtn img{
+    width: 100%;
+    /* animation: dayroll 10s linear infinite; */
+}
+@keyframes dayroll {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(350deg)
+    }
+}
+.menu > nav a {
+    color: rgb(215, 209, 221);
+}
+
+
+
+header > #room{
+    /* width:100%; */
+    /* height: 400px; */
+    /* height: 100%; */
+    /* margin: 0 10px; */
+    margin: 0 5%;
+    background-image: url("../images/roomnight.png");
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+header > #room > div{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3%;
+}
+header > #room > div.lamplight{
+    background: no-repeat url(../images/lamplight.svg);
+    position: absolute;
+    bottom: -15%;
+    left: -0.5%;
+    background-size: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+header > #room > div > div#lamp{
+    position: relative;
+}
+header > #room img{
+    display:block;
+    /* width: 100px; */
+    width: 8.67%;
+    /* height: 200px; */
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+
+header > #room p{
+    /* width: 100px; */
+    width: 11%;
+    margin: 0 auto 10%;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+}
+header > #room p:hover{
+    box-shadow: 0 0 5px white;
+}
+header > #room a#lighton{
+    /* height: 21px; */
+    display: block;
+    color: rgb(215, 209, 221);
+}
+
+/* ------------------내용------------------ */
+/* ---공통--- */
+#contents{
+    padding: 20px;
+    /* background-color: rgb(19 17 40 / 90%); */
+    background-color: rgb(243, 204, 136);
+    background: linear-gradient(0deg, rgba(240,199,120,0.2) 0%, rgba(240,199,120,0.8) 80%, rgba(240,199,120,1) 100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s linear;
+    border-radius: 11% 11% 0 0;
+}
+#contents > section{
+    /* margin: 200px 0; */
+    margin: 15% 0;
+}
+#contents > section{}
+
+#contents > section img{
+    /* width: 100%;
+    height: 500px;
+    object-fit: cover; */
+}
+#contents > section > div.seemore{
+  
+    display: block;
+    float: right;
+    margin-top: 30px;
+    /* padding: 15px; */
+    padding: 1% 4%;
+    /* width: 150px;
+    height: 50px; */
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(159, 138, 101);
+    transition: .7s;
+}
+
+
+/* ---개별--- */
+/* ----about me---- */
+#contents > .conts1{
+    position: relative;
+    /* height: 100%; */
+}
+#contents > .conts1 > div#openAbMe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    cursor: pointer;
+    transition: 1s;
+}
+#contents > .conts1 > div#openAbMe > h2{
+    color: rgb(43, 32, 52);
+}
+#contents > .conts1 > article{
+    width: 100%;
+    position: relative;
+    transition: 1s;
+    padding: 4% 3%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    overflow: hidden;
+    font-family: 'Do Hyeon';
+}
+#contents > .conts1 > article > div.myinfo{
+    /* border: 1px solid blue; */
+    top:0px;
+    overflow: hidden;
+    transition: 1s;
+    height: 0%;
+    transform: translateY(999px);
+    padding: 0px 5%;
+}
+.myinfo > div {
+    display: block;
+    margin-bottom: 5%
+}
+.myinfo > div > * {
+    float: left;
+    margin: 0 8%;
+    width: 15%;
+    height: 100px;
+    /* padding: 2% 0; */
+}
+.myinfo #htmlprog{
+    position: relative;
+    width: 20%;
+    padding: 3%;
+}
+#htmlprog > div{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.myinfo #htmlprog p{
+    text-align: center;
+}
+.myinfo #htmlprog span{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -53%); */
+}
+.myinfo #htmlprog progress{
+    width: 100%;
+    padding: 15% 0;
+}
+.myinfo .progress{
+    /* width: 100px; */
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+    position: relative;
+    z-index: -2;
+    /* padding: 20% 0; */
+    overflow: hidden;
+}
+.myinfo .progress > div.pro-perct{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.myinfo #cssprog .progress > #progress-bar2, 
+.myinfo #jsprog .progress > #progress-bar3{
+    background-color: orange;
+    position: absolute;
+    z-index: -1;
+    bottom:0;
+    width: 100%;
+}
+.myinfo #cssprog .progress > #progress-bar2{
+    animation: progressup 3s infinite alternate-reverse;
+    animation-fill-mode: both;
+}
+@keyframes progressup{
+    0% {
+        height: 80%;
+    }
+    100%{
+        height: 0%;
+    }
+}
+.myinfo > .design > * {
+    margin: 0 17%;
+}
+.myinfo #jsprog .progress > #progress-bar3{
+    height: 0%;
+}
+.myinfo > div.design{
+}
+.design #photoprog{
+    background-image: url("../images/photoshop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.design #illustprog{
+    background-image: url("../images/illust.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.design .progress{
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    text-shadow: 1px 1px 1px white;
+    transform: translateY(70%);
+}
+.design .progress span{
+    position: absolute;
+    transform: translate(-40%, -30%);
+}
+
+
+#contents >.conts1 > div.seemore{
+    transform : translateY(-200%);
+}
+
+
+/* ----포트폴리오 영역---- */
+#contents > .conts2{
+    width: 100%;
+    /* height: 100%; */
+}
+.conts2 > article{
+    /* background: no-repeat center/cover url("../images/milkyway_example.jpg") */
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    width: 100%;
+    /* height: 100%; */
+    padding: 40px 3%;
+}
+.conts2 > article > div.conts-title{
+    /* opacity: 0;
+    visibility: hidden; */
+    transition: 1s linear;
+    transform : translateY(40%)
+}
+.conts2 > article > div.conts-title > h2{
+    text-align: center;
+}
+
+.conts2 > article > div#portfolio{
+    /* height: 0;
+    opacity: 0;
+    visibility: hidden; */
+    transition: 1s linear;
+    transform : translateY(50%);
+    position: relative;
+}
+#portfolio > .swiper {
+    /* background-color: red; */
+    /* width: 1200px; */
+    width: 100%;
+    /* padding:0 50px; */
+    padding: 0 3%;
+    margin: 50px 0; 
+}
+.swiper-wrapper{
+    /* background-color: orange; */
+}
+.swiper-slide{
+    /* background-color: yellow; */
+    width: 700px;
+    height:100%;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 3px double rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    /*  */
+}
+.swiper-slide > * {float:left;}
+.swiper-slide > div.viewpage{
+    /* background-color: green; */
+    width: 50%;
+    /* height: 100%; */
+}
+.viewpage > img{
+    width: 100%;
+    /* height: 150px; */
+    margin: 47px 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.viewpage > img:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+/* 정보페이지 */
+.swiper-slide > div.infopage{
+    /* background-color: darkcyan; */
+    width: 50%;
+    /* height:300px; */
+    padding-left: 50px;
+}
+.swiper-slide > div.infopage > *{
+    /* padding: 0 10px 10px; */
+    padding: 0 5% 2%;
+}
+.infopage > h3{
+    border: 3px double rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px !important;
+    /* font-size: 22px; */
+    font-size: 2.3vw;
+    letter-spacing: 3px;
+}
+.infopage > p{
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: 'Do Hyeon';
+}
+.infopage > p:nth-child(2){
+    padding: 10px;
+    text-align: center;
+    /* font-size: 20px; */
+    font-size: 1.5vw;
+}
+
+.infopage > p:nth-child(3){
+    text-align: justify;
+    font-size: 1.2vw;
+}
+.infopage > p:nth-child(3) > a {
+    font-size: 1.2vw;
+    font-family: 'Do Hyeon';
+}
+.infopage > p:nth-child(3) > a:hover {
+    text-shadow: 0 0 5px rgb(252, 244, 225);
+}
+
+.infopage > p:nth-child(4){
+    /* font-size: 14px; */
+    font-size: 1vw;
+}
+.infopage > p:nth-child(5){
+    /* font-size: 14px; */
+    font-size: 1vw;
+    padding-bottom: 5%;
+}
+
+.swiper-button-prev{
+    left: -20px;
+    color: white
+}
+.swiper-button-next{
+    right: -20px;
+    color: white;
+}
+.swiper-button-prev:hover,.swiper-button-next:hover{
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+
+.conts2 > div.seemore{}
+
+/* ----etc영역---- */
+#contents > .conts3{
+    width: 100%;
+    /* height: 100%; */
+}
+.conts3 *{
+    color: rgb(31, 22, 38);
+}
+.conts3 > article {
+    height: 300px;
+    /* background: no-repeat center/cover url("../images/milkyway_example.jpg") ; */
+    width: 100%;
+    /* height: 100%; */
+}
+.conts3 > article > *{float: left;}
+
+.conts3 > article > .conts-title {
+    float: none;
+    margin-bottom: 50px;
+}
+.conts3 > article > .conts-title > h2 {}
+
+
+
+.conts3 > article > div.contact{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(143, 125, 92);
+    /* padding: 30px 50px; */
+    padding: 3% 4.166666666666667%;
+    border-radius: 3%;
+}
+.contact > h2{
+    font-size: 4vw;
+}
+.contact > div{}
+.contact > div > div{
+    /* margin: 20px 0; */
+    margin: 5% 0;
+    /* font-size: 20px; */
+    font-size: 2.5vw;
+    text-align: center;
+}
+.contact > div > #name{
+    font-family: 'Do Hyeon';
+    letter-spacing: 7px;
+}
+.contact > div > #address{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8vw;
+}
+
+
+.conts3 > article > div.sns{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.sns > *{
+    /* height: 111px; */
+    height: 50%;
+    background-color: rgba(255,255,255,0.5);
+}
+.sns > *:hover{
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+.sns > #tstory{
+    /* height: 50%; */
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+}
+.sns > #psnpage{
+    /* height: 50%; */
+    position: relative;
+}
+.sns > #psnpage > div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Do Hyeon';
+    font-size: 2vw;
+    letter-spacing: 2px;
+}
+
+/* ------------------푸터------------------ */
+
+/* -----------1900----------- */
+@media all and (min-width: 1900px){
+    .myinfo > div > * {
+        height: 150px;
+    }
+    .conts3 > article {
+        height: 400px;
+    }
+}
+
+/* -----------1300----------- */
+@media all and (max-width: 1300px){
+
+    .conts3 > article {
+        height: 260px;
+    }
+    .sns > div {
+        padding: 3%;
+    }
+}
+
+
+/* -----------600----------- */
+@media all and (max-width: 600px){
+    *{
+        font-size: 5vw;
+    }
+    h2 {
+        font-size: 10vw;
+    }
+    .wrap{
+        padding: 2%;
+    }
+    .box1300{
+        width: 100%;
+    }
+    #sidebar{
+        width: 13.63%;
+        border-radius: 20px;
+        right: 0;
+    }
+    #sidebar > div > li{
+        padding: 9% 0;
+    }
+    #sidebar > div a {
+        font-size: 3vw;
+        color: rgb(53, 47, 58);
+    }
+    #uppertop {
+        right: 5px;
+    }
+    header > .menu > nav {
+        width: 100%;
+        padding-left: 3%;
+    }
+
+    header > #room img {
+        width: 50px;
+        height: auto;
+    }
+    header > #room p {
+        width: 20%;
+        margin: 0 auto;
+    }
+    header > #room > div.lamplight {
+        background-position: center;
+        bottom: -17%;
+        left: 0;
+    }
+    .conts-title {
+        padding: 0;
+    }
+    #contents > .conts1 > article > div.myinfo{
+        padding: 5%;
+    }
+    .myinfo > div.computing{
+        margin-bottom: 10%;
+    }
+    .myinfo > div > *{
+        height: 50px
+    }
+    .computing .progress p, #htmlprog > p{
+        transform: translateY(-10px)
+    }
+    .progress *, #htmlprog > *{
+        font-size: 3vw;
+    }
+    .design .progress p{
+        transform: translateY(-5px)
+    }
+    #contents > section > div.seemore{
+        margin-top: 0;
+    }
+    .swiper-slide{
+        padding: 21px 5px;
+    }
+    .swiper-slide > * {
+        float: none;
+    }
+    .swiper-slide > div.viewpage {
+        width: 100%;
+        height: 200px;
+    }
+    .viewpage > img {
+        width: 80%;
+        margin: 10%;
+    }
+    .swiper-slide > div.infopage {
+        width: 80%;
+        padding-left: 0;
+        margin: 10%;
+    }
+    .infopage > h3{
+        font-size: 6vw;
+        margin-bottom: 10px
+    }
+    .infopage > p:nth-child(2) {
+        padding-top: 10px;
+        font-size: 4vw
+    }
+    .infopage > p:nth-child(3) {
+        font-size: 3.5vw;
+    }
+    .infopage > p:nth-child(4),
+    .infopage > p:nth-child(5) {
+        font-size: 3vw;
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+        font-size: 30px;
+    }
+
+    .conts3 > article {
+        height: 110px;
+    }
+    .contact > div > #name {
+        font-size: 5vw;
+    }
+    .contact > div > div#address {
+        font-size: 2vw;
+    }
+    .contact > div > div {
+        margin: 5px 0;
+    }
+    .sns img{
+        padding: 0 14%;
+    }
+}
+
+
+/* -----------400----------- */
+
+@media (max-width: 400px){
+    #contents{
+        border-radius: 6% 6% 0 0;
+    }
+    #contents > section > article {
+        padding: 0;
+    }
+    .swiper-slide > div.viewpage {
+        height: 160px;
+    }
+    .conts3 > article {
+        height: 100px;
+    }
+    .conts3 > article > div.contact {
+        width: 45%;
+    }
+    .sns img {
+        height: 40px;
+        padding: 0;
+    }
+    .conts3 > article > div.sns {
+        width: 55%;
+    }
+    
+}
