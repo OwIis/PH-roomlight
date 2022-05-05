@@ -331,6 +331,11 @@ window.onload = function(){
     tStory.onclick = function(){
         window.open(tStoryLink)
     }
+    var github = document.getElementById("psnpage");
+    var githubLink = "https://github.com/OwIis"
+    github.onclick = function(){
+        window.open(githubLink)
+    }
     
     //a 연결
     var lightOn = document.getElementById("lighton");
