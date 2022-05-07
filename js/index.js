@@ -165,14 +165,7 @@ window.onload = function(){
         mousewheel: false,
         slidesPerView: 1,
         slidesPerGroup: 1,
-        breakpoints:{
-            1500:{
-                spaceBetween: 50
-            },
-            300:{
-                spaceBetween: 30,
-            }
-        },
+        spaceBetween : 30,
 
         // Navigation arrows
         navigation: {
@@ -219,6 +212,9 @@ window.onload = function(){
             window.open("https://jsj0832.cafe24.com/homework/portfolio/mainpage/index.html")
         };
     });
+
+    //슬라이드 탭이동
+    console.log($(".swiper-slide"))
 
 
     //conts about me클릭이벤트
@@ -297,9 +293,9 @@ window.onload = function(){
         $(".conts2 .conts-title, .conts2 #portfolio").each(function(){
             var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 0.5;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
-            console.log($(".conts2 #portfolio").offset() )
+            //console.log($(".conts2 #portfolio").offset() )
             if(bottom_of_window > bottom_of_element){
-                console.log("hi")
+                //console.log("hi")
                 $(this).css({
                     "transform" : "translateY(0%)"
                 })

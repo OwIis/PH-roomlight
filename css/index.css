@@ -47,7 +47,8 @@ a{
     font-family: 'Do Hyeon';
 }
 .conts-title{
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    padding: 3% 0;
     font-size: 40px;
     text-align: center;
 }
@@ -596,7 +597,7 @@ header > #room a#lighton{
     height: 20vw;
     background-color: rgb(143, 125, 92);
     /* padding: 30px 50px; */
-    padding: 2%;
+    padding: 3%;
     border-radius: 10px 0 0 10px;
 }
 .contact > h2{
@@ -696,7 +697,7 @@ header > #room a#lighton{
 /* -----------600----------- */
 @media all and (max-width: 600px){
     *{
-        font-size: 5vw;
+        font-size: 3vh;
     }
     h2 {
         font-size: 10vw;
@@ -750,7 +751,7 @@ header > #room a#lighton{
         margin-bottom: 10%;
     }
     .myinfo > div > *{
-        height: 50px
+        height: 60px
     }
     .computing .progress p, #htmlprog > p{
         transform: translateY(-10px)
@@ -817,8 +818,11 @@ header > #room a#lighton{
     .contact > div > div {
         margin: 5px 0;
     }
-    .sns img{
-        padding: 0 14%;
+    .sns > #tstory > img{
+        padding: 1% 0%;
+    }
+    .sns > #psnpage > img{
+        padding: 2% 0;
     }
 }
 
