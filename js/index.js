@@ -203,7 +203,7 @@ window.onload = function(){
             window.open("https://jsj0832.cafe24.com/homework/portfolio/wildsoul/wildsoul.html" ,"_blank")            
         };
     });
-    var goroomlight = document.getElementById("roomlight")
+    var goroomlight = document.getElementById("roomlight");
     goroomlight.onclick = function(){
         window.open("https://jsj0832.cafe24.com/homework/portfolio/mainpage/index.html")
     };
@@ -219,9 +219,9 @@ window.onload = function(){
 
     //conts about me클릭이벤트
     var openAbMe = document.querySelector("#openAbMe");
-    var openMyInfo = document.querySelector(".conts1 article")
-    var myInfo = document.querySelector(".myinfo")
-    var openSeeMore = document.querySelector(".seemore")
+    var openMyInfo = document.querySelector(".conts1 article");
+    var myInfo = document.querySelector(".myinfo");
+    var openSeeMore = document.querySelector(".seemore");
     // conts1 about me progress
     var progressWrap = document.querySelector(".progress");
     var progressBar3 = document.getElementById("progress-bar3");
@@ -325,15 +325,17 @@ window.onload = function(){
     var tStory = document.getElementById("tstory");
     var tStoryLink = 'https://gotyoudong.tistory.com/'
     tStory.onclick = function(){
-        window.open(tStoryLink)
+        window.open(tStoryLink);
     }
+    
     var github = document.getElementById("psnpage");
     var githubLink = "https://github.com/OwIis"
     github.onclick = function(){
-        window.open(githubLink)
+        window.open(githubLink);
     }
     
-    //a 연결
+    
+    //a 연결---------------------------------------------
     var lightOn = document.getElementById("lighton");
     // window.onkeydown = (e) => console.log(e);
     lightOn.addEventListener("keypress", actEnter, false);
@@ -351,7 +353,18 @@ window.onload = function(){
         };
     }
     
-    
-
+    //contact sns a 연결
+    tStory.addEventListener("keypress", actEnter3, false);
+    function actEnter3(e){
+        if(e.keyCode === 13){
+            window.open(tStoryLink);
+        }
+    }
+    github.addEventListener("keypress", actEnter4, false);
+    function actEnter4(e){
+        if(e.keyCode === 13){
+            window.open(githubLink);
+        }
+    }
 }   
 

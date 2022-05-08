@@ -62,7 +62,8 @@ h2{
     position: fixed;
     width: 12.63%;
     top: 10%;
-    right: 15px;
+    /* right: 15px; */
+    right: 1.5%;
     background-color: rgb(211, 147, 35);
     border-radius: 10px;
     transition: 1s ;
@@ -73,14 +74,14 @@ h2{
     /* width: 150px; */
     width: 100%;
     /* padding: 40px 20px; */
-    padding: 26% 13%;
+    padding: 15% 10%;
     
 }
 #sidebar > div li{
     list-style: none;
     cursor: pointer;
-    padding: 10px 20px;
-    padding: 9% 13%;
+    /* padding: 10px 20px; */
+    padding: 10%;
     text-align: center;
     border-top: 1px dotted rgba(255,255,255,.3);
     border-bottom: 1px dotted rgba(255,255,255,.3);
@@ -710,7 +711,7 @@ header > #room a#lighton{
     }
     #sidebar{
         width: 13.63%;
-        border-radius: 20px;
+        border-radius: 10px;
         right: 0;
     }
     #sidebar > div > li{
