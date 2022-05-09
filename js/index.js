@@ -160,12 +160,12 @@ window.onload = function(){
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         // direction: 'vertical',
-        loop: true,
+        //loop: true,
         // effect: slide,
         mousewheel: false,
         slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween : 30,
+        //slidesPerGroup: 1,
+        spaceBetween : 100,
 
         // Navigation arrows
         navigation: {
@@ -214,7 +214,21 @@ window.onload = function(){
     });
 
     //슬라이드 탭이동
-    console.log($(".swiper-slide"))
+    
+        // if($(".swiper-button-prev", ".swiper-button-next").keypress ==="Tab"){
+        //     console.log("im tab")
+        // }
+            // function(){
+            //     if($(this).code === "ArrowLeft"){
+            //         console.log("right")
+            //     }else if($(this).code === "ArrowRight"){
+            //         console.log("left")
+            //     }
+            // }
+        
+        //console.log(window.onkeydown = (e) => console.log(e)) 
+        
+    
 
 
     //conts about me클릭이벤트
